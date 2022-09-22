@@ -150,4 +150,3 @@ if( Number(metrEnd) === 1 ) {
 }else if (km === 1){
      console.log(`${metr} метрів- це ${km} кілометр`)
  }
-sdcdsdsdcsdcdscdscdsc
