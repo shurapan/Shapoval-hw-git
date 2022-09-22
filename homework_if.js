@@ -133,6 +133,21 @@ console.log(result)
 //     https://www.kyivdictionary.com/uk/words/conjugation/?word=%D0%BC%D0%B5%D1%82%D1%80&lang=uk
 // */
 
-let metr = 1000;
+let metr = 1005;
+ let km = metr / 1000;
+ let metrEnd = `${metr}`[`${metr}`.length-1]
+ let kmEnd = `${km}`[`${km}`.length-1]
 
+if( Number(metrEnd) === 1 ) {
+    console.log(`${metr} метр- це ${km} кілометра`)
+}else if( Number(metrEnd) === 2 ||  Number(metrEnd) === 3 || Number(metrEnd) === 4 ) {
+    console.log(`${metr} метра- це ${km} кілометра`)
+} else if( Number.isInteger(km) === false && km != 1 || km ===2 ||  km ===3 ||  km ===4  && Number(metrEnd) === 0 || Number(metrEnd) === 5 || Number(metrEnd) === 6 || Number(metrEnd) === 7 || Number(metrEnd) === 8 || Number(metrEnd) === 9 ){
+     console.log(`${metr} метрів- це ${km} кілометра`)
+     console.log(km > 0 && km <1)
+}else if( Number.isInteger(km) && km != 1 ||km === 0 || km ===5 || km ===6 || km ===7 || km ===8 || km ===9 && Number(metrEnd) === 0 || Number(metrEnd) === 5 || Number(metrEnd) === 6 || Number(metrEnd) === 7 || Number(metrEnd) === 8 || Number(metrEnd) === 9){
+     console.log(`${metr} метрів- це ${km} кілометрів`)
+}else if (km === 1){
+     console.log(`${metr} метрів- це ${km} кілометр`)
+ }
 sdcdsdsdcsdcdscdscdsc
